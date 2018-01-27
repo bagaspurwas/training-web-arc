@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peminjaman Barang</title>
+
+  <!-- icon -->
+  <link rel="icon" href="img/logo.png">
+
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', 'Helvetica', sans-serif;
+      font-weight: 400;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 15px;
+    }
+    .mb { margin-bottom: 1rem; }
+    .mt { margin-top: 1rem; }
+    .ml { margin-left: 1rem; }
+    .mr { margin-right: 1rem; }
+    .mx { margin-left: 1rem; margin-right: 1rem; }
+    .my { margin-top: 1rem; margin-bottom: 1rem; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .my-auto { margin-top: auto; margin-bottom: auto; }
+    .pb { padding-bottom: 1rem; }
+    .pt { padding-top: 1rem; }
+    .pl { padding-left: 1rem; }
+    .pr { padding-right: 1rem; }
+    .px { padding-left: 1rem; padding-right: 1rem; }
+    .py { padding-top: 1rem; padding-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pt pb text-center">
+      <img class="mb" src="img/logo.png" alt="logo-arc">
+      <h2> Peminjaman Barang </h2>
+      <p> Selamat datang. Anda bisa meminjam barang di sini </p>
+    </div>
+
+    <form>
+      <div class="mb">
+        <h4 class="mb"> Data Peminjam </h4>
+        <p class="mb">
+          <label> Nama Awal </label>
+          <input type="text" required>
+        </p>
+        <p class="mb">
+          <label> Nama Akhir </label>
+          <input type="text">
+        </p>
+        <p class="mb">
+          <label> Email </label>
+          <input type="email" placeholder="namamu@example.com" required>
+        </p>
+        <p class="mb">
+          <label> NIM </label>
+          <input type="text" required>
+        </p>
+      </div>
+
+      <div class="mb">
+        <h4 class="mb"> Data Barang </h4>
+        <p class="mb">
+          <label>Nama barang</label>
+          <select>
+            <option>VPS</option>
+            <option>Kabel UTP</option>
+            <option>Router</option>
+            <option>Proyektor</option>
+            <option>Layar LCD</option>
+          </select>
+        </p>
+        <p class="mb">
+          <label>Tanggal peminjaman</label>
+          <input type="date" value="2017-01-27" required>
+        </p>
+        <p class="mb">
+          <label>Tanggal dikembalikan</label>
+          <input type="date" value="2017-01-27" required>
+        </p>
+      </div>
+
+      <hr class="mb">
+
+      <button type="submit">Pinjam sekarang</button>
+    </form>
+
+    <footer class="pt my text-center">
+      <p>&copy; 2017-2018 <a href="//arc.itb.ac.id">Amateur Radio Club ITB</a></p>
+    </footer>
+  </div>
+</body>
+</html>
