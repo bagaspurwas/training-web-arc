@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peminjaman Barang</title>
+
+  <!-- icon -->
+  <link rel="icon" href="img/logo.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="pt pb text-center">
+      <img class="mb" src="img/logo.png" alt="logo-arc">
+      <h2> Peminjaman Barang </h2>
+      <p> Selamat datang. Anda bisa meminjam barang di sini </p>
+    </div>
+
+    <form>
+      <div class="mb">
+        <h4 class="mb"> Data Peminjam </h4>
+        <p class="mb">
+          <label> Nama Awal </label>
+          <input class="form-field" type="text" required>
+        </p>
+        <p class="mb">
+          <label> Nama Akhir </label>
+          <input class="form-field" type="text">
+        </p>
+        <p class="mb">
+          <label> Email </label>
+          <input class="form-field" type="email" placeholder="namamu@example.com" required>
+        </p>
+        <p class="mb">
+          <label> NIM </label>
+          <input class="form-field" type="text" required>
+        </p>
+      </div>
+
+      <div class="mb">
+        <h4 class="mb"> Data Barang </h4>
+        <p class="mb">
+          <label>Nama barang</label>
+          <select class="form-field">
+            <option>VPS</option>
+            <option>Kabel UTP</option>
+            <option>Router</option>
+            <option>Proyektor</option>
+            <option>Layar LCD</option>
+          </select>
+        </p>
+        <p class="mb">
+          <label>Tanggal peminjaman</label>
+          <input class="form-field" type="date" value="2017-01-27" required>
+        </p>
+        <p class="mb">
+          <label>Tanggal dikembalikan</label>
+          <input class="form-field" type="date" value="2017-01-27" required>
+        </p>
+      </div>
+
+      <hr class="mb">
+
+      <button type="submit" class="button">Pinjam sekarang</button>
+    </form>
+
+    <footer class="pt my text-center">
+      <p>&copy; 2017-2018 <a href="//arc.itb.ac.id">Amateur Radio Club ITB</a></p>
+    </footer>
+  </div>
+</body>
+</html>
