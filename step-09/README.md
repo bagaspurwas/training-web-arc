@@ -5,3 +5,4 @@
 3. Intro to JS
  * Add submit.js
  * Add simple alert function
+ * Function in JS
