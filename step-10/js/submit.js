@@ -1,5 +1,10 @@
 $("#sukses").css('display', 'none');
 
+function success() {
+	$("#form").fadeOut();
+	$("#sukses").fadeIn();
+}
+
 function submit() {
 	var data = {
 		"nim" : $("#nim").val(),
@@ -11,6 +16,5 @@ function submit() {
 		"tanggal-dikembalikan" : $("#tanggal-dikembalikan").val(),
 	};
 	console.log(data);
-	$("#form").fadeOut();
-	$("#sukses").fadeIn();
+	success();
 }
